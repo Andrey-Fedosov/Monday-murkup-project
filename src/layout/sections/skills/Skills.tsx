@@ -17,5 +17,5 @@ export function Skills() {
 
 const StyledSkills = styled.div`
   // min-height: 100vh;
-  background-color: #fdadad;
+  background-color: #865b5b;
 `;

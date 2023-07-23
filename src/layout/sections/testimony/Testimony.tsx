@@ -16,6 +16,6 @@ export function Testimony() {
 }
 
 const StyledTestimony = styled.div`
-  min-height: 100vh;
-  background-color: #fdadad;
+  /* min-height: 100vh; */
+  background-color: #bd9595;
 `;

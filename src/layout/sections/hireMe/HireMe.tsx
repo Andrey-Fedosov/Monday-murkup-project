@@ -15,6 +15,6 @@ export function HireMe() {
 }
 
 const StyledHireMe = styled.div`
-  min-height: 100vh;
-  background-color: #fdadad;
+  /* min-height: 100vh; */
+  background-color: #d8a7a7;
 `;

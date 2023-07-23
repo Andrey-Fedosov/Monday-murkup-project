@@ -20,8 +20,8 @@ export function Contact() {
 }
 
 const StyledContact = styled.div`
-  min-height: 100vh;
-  background-color: #fdadad;
+  /* min-height: 100vh; */
+  background-color: #ad6060;
 `;
 
 const StyledContactBox = styled.div`

@@ -18,7 +18,7 @@ export function Works() {
 
 const StyledWorks = styled.div`
   min-height: 100vh;
-  background-color: #fdadad;
+  background-color: #ac5c5c;
 `;
 
 function ExampleMenu() {
