@@ -8,7 +8,7 @@ export function Skills() {
   return (
     <StyledSkills>
       <FlexWrapper direction="column" justify="center" align="center">
-        <SectionTitle />
+        <SectionTitle titleValue="Skills" />
         <SkillsBox />
       </FlexWrapper>
     </StyledSkills>
@@ -16,6 +16,6 @@ export function Skills() {
 }
 
 const StyledSkills = styled.div`
-  min-height: 100vh;
+  // min-height: 100vh;
   background-color: #fdadad;
 `;

@@ -1,10 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export function SectionTitle() {
+type SectionTitlePropsType = {
+  titleValue?: string;
+};
+
+export function SectionTitle(props: SectionTitlePropsType) {
   return (
     <div>
-      <h2>My Skills</h2>
+      <h2>{`${props.titleValue}`}</h2>
     </div>
   );
 }
