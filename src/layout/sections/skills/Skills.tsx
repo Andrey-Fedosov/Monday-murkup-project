@@ -7,7 +7,12 @@ import { SkillsBox } from '../../../components/skillsBox/SkillsBox';
 export function Skills() {
   return (
     <StyledSkills>
-      <FlexWrapper direction="column" justify="center" align="center">
+      <FlexWrapper
+        direction="column"
+        justify="center"
+        align="center"
+        wrap="wrap"
+      >
         <SectionTitle titleValue="Skills" />
         <SkillsBox />
       </FlexWrapper>
