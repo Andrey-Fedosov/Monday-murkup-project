@@ -16,7 +16,7 @@ export function Works() {
   );
 }
 
-const StyledWorks = styled.div`
+const StyledWorks = styled.section`
   min-height: 100vh;
   background-color: #ac5c5c;
 `;

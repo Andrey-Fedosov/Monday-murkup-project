@@ -4,7 +4,7 @@ import { Icon } from '../icon/Icon';
 export function Logo() {
   return (
     <a href="#">
-      <Icon iconId="codeSVG" width="150" height="150" />
+      <Icon iconId="codeSVG" width="80" height="80" />
     </a>
   );
 }

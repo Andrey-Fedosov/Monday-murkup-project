@@ -20,7 +20,7 @@ export function Skills() {
   );
 }
 
-const StyledSkills = styled.div`
+const StyledSkills = styled.section`
   // min-height: 100vh;
-  background-color: #865b5b;
+  /* background-color: #865b5b; */
 `;

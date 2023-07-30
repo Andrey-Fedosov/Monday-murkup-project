@@ -19,9 +19,9 @@ export function Contact() {
   );
 }
 
-const StyledContact = styled.div`
+const StyledContact = styled.section`
   /* min-height: 100vh; */
-  background-color: #ad6060;
+  /* background-color: #ad6060; */
 `;
 
 const StyledContactBox = styled.div`

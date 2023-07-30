@@ -1,20 +1,41 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Logo } from '../../components/logo/Logo';
-import { Menu } from '../../components/menu/Menu';
+import { Container } from '../../components/Container';
+import { FlexWrapper } from '../../components/flexWrapper/FlexWrapper';
+import { theme } from '../../styles/Themes';
+import { HeaderMenu } from './headerMenu/HeaderMenu';
+
+const headerMenuItemsArray = [
+  'Home',
+  'Skills',
+  'Works',
+  'Testimony',
+  'Contact',
+  'ZZhopa',
+];
 
 export function Header() {
   return (
     <StyledHeader>
-      <Logo />
-      <Menu />
+      <Container>
+        <FlexWrapper justify={'space-between'} align={'center'}>
+          <Logo />
+          <HeaderMenu headerMenuItems={headerMenuItemsArray} />
+        </FlexWrapper>
+      </Container>
     </StyledHeader>
   );
 }
 
 const StyledHeader = styled.header`
-  background-color: lightgreen;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: ${theme.colors.primaryBg};
+  color: ${theme.colors.fontColor};
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  opacity: 90%;
 `;

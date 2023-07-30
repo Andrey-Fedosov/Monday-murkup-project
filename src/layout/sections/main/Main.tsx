@@ -18,9 +18,9 @@ export function Main() {
   );
 }
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
   min-height: 100vh;
-  background-color: #fdadad;
+  /* background-color: #fdadad; */
 `;
 
 const StyledPhoto = styled.img`
