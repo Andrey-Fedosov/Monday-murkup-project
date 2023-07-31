@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../icon/Icon';
+import { theme } from '../../styles/Themes';
 
 type SkillItemPropsType = {
   skillItemTitle?: string;
@@ -14,36 +15,36 @@ export function SkillsBox() {
       <SkillItem
         skillItemTitle="HTML5"
         skilliItemLogo="codeSVG"
-        skillItemText="lorem ipsum dolorem, lorem ipsum dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quidem eligendi iure, mollitia dignissimos fuga qui nostrum!"
+        skillItemText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex corporis molestiae fuga est qui tenetur."
       />
 
       <SkillItem
         skillItemTitle="CSS3"
         skilliItemLogo="cssSVG"
-        skillItemText="Lorem ipsum dolorem, lorem ipsum doloremLorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quidem eligendi iure, mollitia dignissimos fuga qui nostrum!"
+        skillItemText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex corporis molestiae fuga est qui tenetur."
       />
 
       <SkillItem
         skillItemTitle="FIGMA"
         skilliItemLogo="figmaSVG"
-        skillItemText="Lorem ipsum dolorem, lorem ipsum dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quidem eligendi iure, mollitia dignissimos fuga qui nostrum!"
+        skillItemText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex corporis molestiae fuga est qui tenetur."
       />
 
       <SkillItem
         skillItemTitle="REACT"
         skilliItemLogo="reactSVG"
-        skillItemText="Lorem ipsum dolorem, lorem ipsum dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quidem eligendi iure, mollitia dignissimos fuga qui nostrum!"
+        skillItemText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex corporis molestiae fuga est qui tenetur."
       />
 
       <SkillItem
         skillItemTitle="STYLE COMPONENTS"
         skilliItemLogo="stCompSVG"
-        skillItemText="Lorem ipsum dolorem, lorem ipsum dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quidem eligendi iure, mollitia dignissimos fuga qui nostrum!"
+        skillItemText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex corporis molestiae fuga est qui tenetur."
       />
       <SkillItem
         skillItemTitle="TYPESCRIPT"
         skilliItemLogo="typescriptSVG"
-        skillItemText="Lorem ipsum dolorem, lorem ipsum dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quidem eligendi iure, mollitia dignissimos fuga qui nostrum!"
+        skillItemText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ex corporis molestiae fuga est qui tenetur."
       />
     </StyledSkills>
   );
@@ -76,12 +77,12 @@ const StyledItem = styled.div`
   justify-content: center;
   align-items: center;
   gap: 15px;
-  background-color: #ffffb0;
+  background-color: transparent;
 `;
 const StyledSkillItemTitle = styled.h3`
   font-size: 20px;
 `;
 const StyledSkillItemText = styled.p`
-  color: brown;
+  color: ${theme.colors.fontColor};
   font-size: 16px;
 `;

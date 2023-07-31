@@ -12,7 +12,6 @@ const headerMenuItemsArray = [
   'Works',
   'Testimony',
   'Contact',
-  'ZZhopa',
 ];
 
 export function Header() {

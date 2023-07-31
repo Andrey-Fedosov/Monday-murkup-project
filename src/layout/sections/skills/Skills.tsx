@@ -3,19 +3,22 @@ import { FlexWrapper } from '../../../components/flexWrapper/FlexWrapper';
 import { SectionTitle } from '../../../components/sectionTitle/SectionTitle';
 import styled from 'styled-components';
 import { SkillsBox } from '../../../components/skillsBox/SkillsBox';
+import { Container } from '../../../components/Container';
 
 export function Skills() {
   return (
     <StyledSkills>
-      <FlexWrapper
-        direction="column"
-        justify="center"
-        align="center"
-        wrap="wrap"
-      >
-        <SectionTitle titleValue="Skills" />
-        <SkillsBox />
-      </FlexWrapper>
+      <Container>
+        <FlexWrapper
+          direction="column"
+          justify="center"
+          align="center"
+          wrap="wrap"
+        >
+          <SectionTitle titleValue="Skills" />
+          <SkillsBox />
+        </FlexWrapper>
+      </Container>
     </StyledSkills>
   );
 }
