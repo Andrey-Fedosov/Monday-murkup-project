@@ -76,8 +76,7 @@ const StyledItem = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-  background-color: transparent;
+  padding: 62px 20px 40px;
 `;
 const StyledSkillItemTitle = styled.h3`
   font-size: 20px;
