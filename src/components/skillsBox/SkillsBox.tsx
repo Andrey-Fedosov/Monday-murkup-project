@@ -62,7 +62,10 @@ const StyledSkills = styled.div`
 function SkillItem(props: SkillItemPropsType) {
   return (
     <StyledItem>
-      <Icon iconId={props.skilliItemLogo} width="50" height="50" />
+      <IconWrapper>
+        <Icon iconId={props.skilliItemLogo} width="50" height="50" />
+      </IconWrapper>
+
       <StyledSkillItemTitle>{props.skillItemTitle}</StyledSkillItemTitle>
       <StyledSkillItemText>{props.skillItemText}</StyledSkillItemText>
     </StyledItem>
@@ -79,9 +82,32 @@ const StyledItem = styled.div`
   padding: 62px 20px 40px;
 `;
 const StyledSkillItemTitle = styled.h3`
-  font-size: 20px;
+  font-size: 16px;
+  margin: 90px 0 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.4;
+  line-height: 1.4;
+  font-weight: 700;
 `;
 const StyledSkillItemText = styled.p`
   color: ${theme.colors.fontColor};
   font-size: 16px;
+  text-align: center;
+`;
+
+const IconWrapper = styled.div`
+  position: relative;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    top: 50%;
+    left: 50%;
+    transform: rotate(45deg) translate(-50%, -50%);
+    transform-origin: top left;
+  }
 `;

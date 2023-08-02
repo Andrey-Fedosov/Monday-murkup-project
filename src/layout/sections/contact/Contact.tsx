@@ -2,19 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/flexWrapper/FlexWrapper';
 import { SectionTitle } from '../../../components/sectionTitle/SectionTitle';
+import { Container } from '../../../components/Container';
 
 export function Contact() {
   return (
     <StyledContact>
-      <FlexWrapper direction="column" align="center" justify="center">
-        <SectionTitle titleValue="Contact" />
-        <StyledContactBox>
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Name" />
-          <textarea />
-          <input type="button" value="send message" />
-        </StyledContactBox>
-      </FlexWrapper>
+      <Container>
+        <SectionTitle>Contact</SectionTitle>
+        <FlexWrapper direction="column" align="center" justify="center">
+          <StyledContactBox>
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Name" />
+            <textarea />
+            <input type="button" value="send message" />
+          </StyledContactBox>
+        </FlexWrapper>
+      </Container>
     </StyledContact>
   );
 }

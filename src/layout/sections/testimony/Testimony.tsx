@@ -3,14 +3,17 @@ import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/flexWrapper/FlexWrapper';
 import { SectionTitle } from '../../../components/sectionTitle/SectionTitle';
 import { TestimonyItem } from '../../../components/testimonyItem/TestimonyItem';
+import { Container } from '../../../components/Container';
 
 export function Testimony() {
   return (
     <StyledTestimony>
-      <FlexWrapper direction="column" justify="center" align="center">
-        <SectionTitle titleValue="Testimony" />
-        <TestimonyItem />
-      </FlexWrapper>
+      <Container>
+        <SectionTitle>Testimony</SectionTitle>
+        <FlexWrapper direction="column" justify="center" align="center">
+          <TestimonyItem />
+        </FlexWrapper>
+      </Container>
     </StyledTestimony>
   );
 }

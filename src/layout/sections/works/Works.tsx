@@ -3,22 +3,25 @@ import React from 'react';
 import { SectionTitle } from '../../../components/sectionTitle/SectionTitle';
 import styled from 'styled-components';
 import { WorkExample } from '../../../components/workExample/WorkExample';
+import { Container } from '../../../components/Container';
 
 export function Works() {
   return (
     <StyledWorks>
-      <FlexWrapper direction="column" justify="center" align="center">
-        <SectionTitle titleValue="My Works" />
-        <ExampleMenu />
-        <WorkExample />
-      </FlexWrapper>
+      <Container>
+        <FlexWrapper direction="column" justify="center" align="center">
+          <SectionTitle>My Works</SectionTitle>
+          <ExampleMenu />
+          <WorkExample />
+        </FlexWrapper>
+      </Container>
     </StyledWorks>
   );
 }
 
 const StyledWorks = styled.section`
   min-height: 100vh;
-  background-color: #ac5c5c;
+  /* background-color: #ac5c5c; */
 `;
 
 function ExampleMenu() {

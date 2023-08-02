@@ -2,12 +2,15 @@ import React from 'react';
 import { FlexWrapper } from '../../../components/flexWrapper/FlexWrapper';
 import styled from 'styled-components';
 import { SectionTitle } from '../../../components/sectionTitle/SectionTitle';
+import { Container } from '../../../components/Container';
 
 export function HireMe() {
   return (
     <StyledHireMe>
+      <Container>
+        <SectionTitle>I Am Available For Freelance</SectionTitle>
+      </Container>
       <FlexWrapper direction="column" justify="center" align="center">
-        <SectionTitle titleValue="I Am Available For Freelance" />
         <input type="button" value="HIRE ME" />
       </FlexWrapper>
     </StyledHireMe>
