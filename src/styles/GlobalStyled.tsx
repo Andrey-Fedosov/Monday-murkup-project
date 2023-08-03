@@ -45,6 +45,11 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.secondaryBg};
   }
 
+  h3 {
+   font-family: "Josefin Sans", sans-serif;
+   font-size: 16px;
+  }
+
 
 
 `;

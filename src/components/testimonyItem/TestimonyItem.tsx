@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../icon/Icon';
+import { IconWrapper } from '../skillsBox/SkillsBox';
 
 export function TestimonyItem() {
   return (
     <StyledItem>
-      <Icon iconId="quoteSVG" width="50" height="50" />
+      <IconWrapper>
+        <Icon iconId="quoteSVG" width="50" height="50" />
+      </IconWrapper>
+
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quae
         aliquam beatae cum eveniet quis?.
