@@ -5,5 +5,6 @@ export const theme = {
     accentColor: '#7572D5',
 
     fontColor: '#fff',
+    borderColor: '#4a4a4a',
   },
 };
