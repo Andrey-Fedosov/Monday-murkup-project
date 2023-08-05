@@ -3,6 +3,7 @@ import { FlexWrapper } from '../../../components/flexWrapper/FlexWrapper';
 import styled from 'styled-components';
 import { SectionTitle } from '../../../components/sectionTitle/SectionTitle';
 import { Container } from '../../../components/Container';
+import { Button } from '../../../components/Button';
 
 export function HireMe() {
   return (
@@ -11,7 +12,7 @@ export function HireMe() {
         <SectionTitle>I Am Available For Freelance</SectionTitle>
       </Container>
       <FlexWrapper direction="column" justify="center" align="center">
-        <input type="button" value="HIRE ME" />
+        <Button>hire me</Button>
       </FlexWrapper>
     </StyledHireMe>
   );

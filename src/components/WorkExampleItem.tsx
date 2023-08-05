@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { theme } from '../styles/Themes';
 import { ExampleMenu } from './exampleMenu/ExampleMenu';
 import { GlobalStyle } from '../styles/GlobalStyled';
+import { Link } from './Link';
+import { Button } from './Button';
 
 const itemMenu = ['Demo', 'Code'];
 
@@ -13,11 +15,17 @@ export function WorkExampleItem(props: {
 }) {
   return (
     <StyledWorkExampleItem>
-      <StyledImage src={props.src} alt="example image" />
+      <ImageWrapper>
+        <StyledImage src={props.src} alt="example image" />
+        <Button>view projects</Button>
+      </ImageWrapper>
+
       <StyledExampleContent>
         <h3>{props.title}</h3>
         <StyledText>{props.text}</StyledText>
-        <ExampleMenu menuItems={itemMenu} />
+        {/* <ExampleMenu menuItems={itemMenu} /> */}
+        <Link href="#">demo</Link>
+        <Link href="#">code</Link>
       </StyledExampleContent>
     </StyledWorkExampleItem>
   );
@@ -26,9 +34,66 @@ export function WorkExampleItem(props: {
 export const StyledWorkExampleItem = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   max-width: 540px;
+  width: 100%;
+  ${Link} {
+    padding: 0 0 8px 0;
 
-  /* gap: 20px; */
+    & + ${Link} {
+      margin-left: 20px;
+    }
+  }
+`;
+
+const ImageWrapper = styled.div`
+  position: relative;
+
+  &:hover {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      /* z-index: -1; */
+    }
+
+    ${Button} {
+      opacity: 1;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%);
+      /* z-index: 0; */
+    }
+  }
+
+  ${Button} {
+    opacity: 1;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+
+    &::before {
+      width: 100%;
+      height: 100%;
+    }
+    /* z-index: 0; */
+  }
+
+  ${Button} {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+  }
 `;
 
 const StyledImage = styled.img`
@@ -41,12 +106,18 @@ const StyledImage = styled.img`
 const StyledExampleContent = styled.div`
   background-color: ${theme.colors.secondaryBg};
   justify-content: flex-start;
+  padding: 25px 20px 25px 20px;
+
   h3 {
-    padding: 20px 0px 0px 20px;
+    /* margin: 25px 20px 25px 20px; */
+  }
+
+  ${Link} {
+    /* margin: 25px 20px 25px 20px;
+    padding-bottom: 8px; */
   }
 `;
 
 const StyledText = styled.p`
-  font-size: 14px;
-  padding: 14px 20px 20px 20px;
+  margin: 14px 0 10px;
 `;

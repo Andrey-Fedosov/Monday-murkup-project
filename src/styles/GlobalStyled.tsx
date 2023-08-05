@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: ${theme.colors.fontColor}
   }
 
   ul{
@@ -32,6 +33,8 @@ export const GlobalStyle = createGlobalStyle`
   button {
     background-color: unset;
     border: none;
+    color: ${theme.colors.fontColor};
+    cursor: pointer;
   }
 
   section {
@@ -48,6 +51,12 @@ export const GlobalStyle = createGlobalStyle`
   h3 {
    font-family: "Josefin Sans", sans-serif;
    font-size: 16px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
   }
 
 

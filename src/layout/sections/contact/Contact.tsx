@@ -4,6 +4,7 @@ import { FlexWrapper } from '../../../components/flexWrapper/FlexWrapper';
 import { SectionTitle } from '../../../components/sectionTitle/SectionTitle';
 import { Container } from '../../../components/Container';
 import { theme } from '../../../styles/Themes';
+import { Button } from '../../../components/Button';
 
 export function Contact() {
   return (
@@ -16,7 +17,7 @@ export function Contact() {
             <StyledInput placeholder="name"></StyledInput>
             <StyledInput placeholder="message" as={'textarea'}></StyledInput>
 
-            <input type="button" value="send message" />
+            <Button>Send a message</Button>
           </StyledContactBox>
         </FlexWrapper>
       </Container>
@@ -38,15 +39,12 @@ const StyledContactBox = styled.form`
   width: 100%;
   margin: 0 auto;
 
-  input:last-of-type {
-    max-width: 112px;
-  }
-
   textarea {
     resize: none;
     max-width: 540px;
     width: 100%;
     height: 155px;
+  }
 `;
 
 const StyledInput = styled.input`
@@ -72,5 +70,4 @@ const StyledInput = styled.input`
   &:focus-visible {
     outline: 1px solid ${theme.colors.borderColor};
   }
-}
 `;

@@ -17,12 +17,12 @@ export function Works() {
       <Container>
         <SectionTitle>My Works</SectionTitle>
         <ExampleMenu menuItems={workMenuArr} />
-        <FlexWrapper justify="space-between" align="center">
+        <FlexWrapper justify="space-between" align="flex-start">
           <WorkExampleItem
             title={'Social Network'}
             src={image1}
             text={
-              'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo corporis maiores placeat fugit asperiores doloremque tempora similique tenetur incidunt debitis'
+              'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo corporis maiores placeat fugit asperiores doloremque tempora similique tenetur incidunt debitis Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo corporis maiores placeat fugit asperiores doloremque tempora similique tenetur incidunt debitis'
             }
           />
           <WorkExampleItem
