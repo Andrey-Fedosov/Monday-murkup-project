@@ -4,13 +4,23 @@ import { FlexWrapper } from '../../../components/flexWrapper/FlexWrapper';
 import { SectionTitle } from '../../../components/sectionTitle/SectionTitle';
 import { TestimonyItem } from '../../../components/testimonyItem/TestimonyItem';
 import { Container } from '../../../components/Container';
+import { Icon } from '../../../components/icon/Icon';
+import { IconWrapper } from '../../../components/skillsBox/SkillsBox';
 
 export function Testimony() {
   return (
     <StyledTestimony>
       <Container>
         <SectionTitle>Testimony</SectionTitle>
-        <FlexWrapper direction="column" justify="center" align="center">
+        <FlexWrapper
+          direction="column"
+          justify="center"
+          align="center"
+          height="100%"
+        >
+          <IconWrapper>
+            <Icon iconId="quoteSVG" width="50" height="50" />
+          </IconWrapper>
           <TestimonyItem />
         </FlexWrapper>
       </Container>

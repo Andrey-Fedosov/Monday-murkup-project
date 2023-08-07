@@ -13,12 +13,28 @@ export function Footer() {
         <SectionTitle>Svetlana</SectionTitle>
         <FlexWrapper direction="column" justify="center" align="center">
           <StyledSocialIcons>
-            <Icon iconId="telegramSVG" width="70" height="70" />
-            <Icon iconId="instaSVG" width="70" height="70" />
-            <Icon iconId="vkSVG" width="70" height="70" />
-            <Icon iconId="linkedInSvg" width="70" height="70" />
+            <SocialItem>
+              <SocialLink href="#">
+                <Icon iconId="telegramSVG" width="70" height="70" />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink href="#">
+                <Icon iconId="instaSVG" width="70" height="70" />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink href="#">
+                <Icon iconId="vkSVG" width="70" height="70" />
+              </SocialLink>
+            </SocialItem>
+            <SocialItem>
+              <SocialLink href="#">
+                <Icon iconId="linkedInSvg" width="70" height="70" />
+              </SocialLink>
+            </SocialItem>
           </StyledSocialIcons>
-          <p> ©️ Svetlana Dyablo. All rights reserved</p>
+          <p> ©️ 2023 Svetlana Dyablo. All rights reserved</p>
         </FlexWrapper>
       </Container>
     </StyledFooter>
@@ -27,11 +43,18 @@ export function Footer() {
 
 const StyledFooter = styled.footer`
   background-color: ${theme.colors.primaryBg};
+  padding: 40px 0px;
+  // opacity: 0.5;
 `;
 
-const StyledSocialIcons = styled.div`
+const StyledSocialIcons = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 27px;
+  gap: 20px;
+  margin: 30px 0;
 `;
+
+const SocialItem = styled.li``;
+
+const SocialLink = styled.a``;
