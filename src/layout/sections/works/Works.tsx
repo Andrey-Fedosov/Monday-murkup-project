@@ -17,7 +17,7 @@ export function Works() {
       <Container>
         <SectionTitle>My Works</SectionTitle>
         <ExampleMenu menuItems={workMenuArr} />
-        <FlexWrapper justify="space-between" align="flex-start">
+        <FlexWrapper justify="center" align="flex-start">
           <WorkExampleItem
             title={'Social Network'}
             src={image1}
@@ -38,7 +38,4 @@ export function Works() {
   );
 }
 
-const StyledWorks = styled.section`
-  /* min-height: 100vh; */
-  /* background-color: #ac5c5c; */
-`;
+const StyledWorks = styled.section``;

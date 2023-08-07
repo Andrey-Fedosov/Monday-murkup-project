@@ -5,6 +5,7 @@ import { Container } from '../../components/Container';
 import { FlexWrapper } from '../../components/flexWrapper/FlexWrapper';
 import { theme } from '../../styles/Themes';
 import { HeaderMenu } from './headerMenu/HeaderMenu';
+import { MobileMenu } from './mobileMenu/MobileMenu';
 
 const headerMenuItemsArray = [
   'Home',
@@ -18,9 +19,10 @@ export function Header() {
   return (
     <StyledHeader>
       <Container>
-        <FlexWrapper justify={'space-between'} align={'center'}>
+        <FlexWrapper justify={'space-between'} align={'center'} wrap={'wrap'}>
           <Logo />
           <HeaderMenu headerMenuItems={headerMenuItemsArray} />
+          <MobileMenu headerMenuItems={headerMenuItemsArray} />
         </FlexWrapper>
       </Container>
     </StyledHeader>

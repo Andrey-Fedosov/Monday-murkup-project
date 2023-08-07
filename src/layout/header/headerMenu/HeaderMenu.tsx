@@ -30,8 +30,12 @@ export function HeaderMenu(props: { headerMenuItems: Array<string> }) {
 const StyledHeaderMenu = styled.nav`
   ul {
     display: flex;
-    gap: 50px;
-    justify-content: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  @media ${theme.media.tablet} {
+    display: none;
   }
 `;
 

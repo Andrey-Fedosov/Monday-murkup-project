@@ -36,7 +36,7 @@ export const StyledWorkExampleItem = styled.div`
   flex-direction: column;
   justify-content: space-between;
   max-width: 540px;
-  width: 100%;
+  width: 50%%;
   ${Link} {
     padding: 0 0 8px 0;
 
