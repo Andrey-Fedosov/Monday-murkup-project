@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Monday-murkup-project/static/css/main.e6c13ad2.css",
-    "main.js": "/Monday-murkup-project/static/js/main.a868c34f.js",
+    "main.css": "/Monday-murkup-project/static/css/main.31d6cfe0.css",
+    "main.js": "/Monday-murkup-project/static/js/main.6883f6cd.js",
     "static/js/787.25eaef86.chunk.js": "/Monday-murkup-project/static/js/787.25eaef86.chunk.js",
     "static/media/Rectangle-4.webp": "/Monday-murkup-project/static/media/Rectangle-4.2c50b48d7e7777515cf9.webp",
-    "static/media/iconSprite.svg": "/Monday-murkup-project/static/media/iconSprite.c0e56797639c4f6898c2cd4ed2a63b57.svg",
+    "static/media/Rectangle-15.webp": "/Monday-murkup-project/static/media/Rectangle-15.46a0ff093593076f0e13.webp",
+    "static/media/iconSprite.svg": "/Monday-murkup-project/static/media/iconSprite.f3364b13a723e8b5c94e98e4eca5154b.svg",
     "static/media/Rectangle-14.webp": "/Monday-murkup-project/static/media/Rectangle-14.bdce61cfe70b4c4e8920.webp",
     "index.html": "/Monday-murkup-project/index.html",
-    "main.e6c13ad2.css.map": "/Monday-murkup-project/static/css/main.e6c13ad2.css.map",
-    "main.a868c34f.js.map": "/Monday-murkup-project/static/js/main.a868c34f.js.map",
+    "main.6883f6cd.js.map": "/Monday-murkup-project/static/js/main.6883f6cd.js.map",
     "787.25eaef86.chunk.js.map": "/Monday-murkup-project/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.a868c34f.js"
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.6883f6cd.js"
   ]
 }
